@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Release new version
-        uses: cangulo-actions/semver@undefined
+        uses: cangulo-actions/semver@clean-test
