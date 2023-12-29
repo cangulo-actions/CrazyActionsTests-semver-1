@@ -1,0 +1,16 @@
+name: Test semver
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  test-semver:
+    name: Release new version
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Release new version
+        uses: cangulo-actions/semver@undefined
